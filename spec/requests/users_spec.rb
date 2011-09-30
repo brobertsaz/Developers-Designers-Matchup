@@ -8,12 +8,12 @@ describe 'user login' do
     mock_login
   end
   
-  it 'authenticates with Facebook' do
+  it 'authenticates with Twitter' do
     User.count.should == 0
     
     visit root_path
     
-    click_link 'Sign in'
+    click_link 'Sign in with Twitter'
     should_be_on user_pages_path User.first
     
     User.count.should == 1
