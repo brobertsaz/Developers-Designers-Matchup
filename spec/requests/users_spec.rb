@@ -8,13 +8,13 @@ describe 'user login' do
     mock_login
   end
   
-  it 'authenticates with Twitter' do
+  it 'authenticates with Twitter', js: true do
     User.count.should == 0
     
     visit root_path
-    
-    click_link 'Sign in with Twitter'
-    should_be_on user_pages_path User.first
+    save_and_open_page
+    click_link 'Sign in'
+
     
     User.count.should == 1
     

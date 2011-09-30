@@ -26,7 +26,6 @@ def mock_login
         "profile_background_tile"=>"false",
         "utc_offset"=>"-28800",
         "created_at"=>"Wed Oct 06 19:11:38 +0000 2010",
-
         "show_all_inline_media"=>"false",
         "contributors_enabled"=>"false",
         "favourites_count"=>"0",
