@@ -14,7 +14,7 @@ describe 'user login' do
     visit root_path
     save_and_open_page
     click_link 'Sign in'
-    should_be_on user_pages_path User.first
+    should_be_on root_path User.first
     
     User.count.should == 1
     
