@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>RebelFoundation</title>
+  <title>Developer and Designer Matchup</title>
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <div id="user_nav">  
+  <%= link_to "Sign in with Twitter", "/auth/twitter" %>  
+</div>
 </head>
 <body>
 

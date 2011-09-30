@@ -1,14 +1,14 @@
 development:
-  facebook:
-    consumer_key: <your_consumer_key>
-    consumer_secret: <your_consumer_secret>
+  twitter:
+    consumer_key: cYIXMfIFbrbUaPFpIDn4g
+    consumer_secret: MBPv405HNlVIzir7szKyjzcisu4LdC2Pudg6Ka3lpjo
 
 test:
-  facebook:
-    consumer_key: <your_consumer_key>
-    consumer_secret: <your_consumer_secret>
+  twitter:
+    consumer_key: cYIXMfIFbrbUaPFpIDn4g
+    consumer_secret: MBPv405HNlVIzir7szKyjzcisu4LdC2Pudg6Ka3lpjo
 
 production:
-  facebook:
-    consumer_key: <your_consumer_key>
-    consumer_secret: <your_consumer_secret>
+  twitter:
+    consumer_key: cYIXMfIFbrbUaPFpIDn4g
+    consumer_secret: MBPv405HNlVIzir7szKyjzcisu4LdC2Pudg6Ka3lpjo
