@@ -1,7 +1,7 @@
 OmniAuth.config.test_mode = true
 
 PROVIDERS = {
-  foursquare: {token: '<mocked_token_from_vcr>', uid: '<mocked_uid_from_vcr>'}
+  twitter: {token: '<mocked_token_from_vcr>', uid: '<mocked_uid_from_vcr>'}
 }
 
 def mock_provider_oauths

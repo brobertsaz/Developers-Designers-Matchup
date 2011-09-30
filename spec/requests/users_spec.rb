@@ -1,15 +1,26 @@
 require 'spec_helper'
 
-describe "Visitor registers with omniauth" do
-  it "should make a new user", :js => true do
-    visit root_path
-    click_on "Sign in with Twitter"
-    soap
-    page.should have_content("Authorize")
-    click_button "Sign In"
-    page.should have_content("Home")
+describe 'user login' do
+  
+  use_vcr_cassette
+  
+  before do
+    mock_login
   end
-end 
-
+  
+  it 'authenticates with Facebook' do
+    User.count.should == 0
+    
+    visit root_path
+    
+    click_link 'Sign in'
+    should_be_on user_pages_path User.first
+    
+    User.count.should == 1
+    
+    page.should have_content('Home')
+  end
+  
+end
 
 
