@@ -1,0 +1,8 @@
+<%= simple_form_for(@dev_job) do |f| %>
+    <%= f.error_notification %>
+	<%= f.input :title %>
+	<%= f.input :description %>
+	<%= f.input :qualifications %>
+	<%= f.input :preferred_skills %>
+	<%= f.button :submit %>
+<% end %>

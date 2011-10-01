@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+  <b>Title:</b>
+  <%= @dev_job.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @dev_job.description %>
+</p>
+
+<p>
+  <b>Qualifications:</b>
+  <%= @dev_job.qualifications %>
+</p>
+
+<p>
+  <b>Preferred skills:</b>
+  <%= @dev_job.preferred_skills %>
+</p>
+
+<%= link_to 'Edit', edit_dev_job_path(@dev_job) %> |
+<%= link_to 'Back', dev_jobs_path %>

@@ -1,0 +1,23 @@
+<h1>Designer Jobs</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Actions</th>
+  </tr>
+
+<% @des_jobs.each do |des_job| %>
+  <tr>
+  	<td><%= link_to des_job.title,  :action => 'show', :id => des_job %></td>
+    <td><%= des_job.description %></td>
+    <td><%= link_to 'Show', des_job %>
+    <%= link_to 'Edit', edit_des_job_path(des_job) %>
+    <%= link_to 'Destroy', des_job, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Des job', new_des_job_path %>

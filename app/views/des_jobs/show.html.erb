@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+<p>
+  <b>Title:</b>
+  <%= @des_job.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @des_job.description %>
+</p>
+
+<p>
+  <b>Responsibilities:</b>
+  <%= @des_job.responsibilities %>
+</p>
+
+<p>
+  <b>Requirements:</b>
+  <%= @des_job.requirements %>
+</p>
+
+
+<%= link_to 'Edit', edit_des_job_path(@des_job) %> |
+<%= link_to 'Back', des_jobs_path %>

@@ -1,0 +1,8 @@
+<%= simple_form_for(@des_job) do |f| %>
+    <%= f.error_notification %>
+	<%= f.input :title, :required => true %>
+	<%= f.input :description, :required => true %>
+	<%= f.input :requirements, :required => true %>
+	<%= f.input :responsibilities, :required => true %>
+	<%= f.button :submit %>
+<% end %>
