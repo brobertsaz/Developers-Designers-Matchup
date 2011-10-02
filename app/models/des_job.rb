@@ -5,4 +5,6 @@ class DesJob
   field :requirements, :type => String
   field :responsibilities, :type => String
   
+  validates_presence_of :title, :description, :requirements, :responsibilities
+  validates_uniqueness_of :title
 end

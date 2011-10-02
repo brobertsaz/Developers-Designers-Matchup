@@ -8,7 +8,6 @@ describe "Dev Jobs fields" do
     # fill_in "Qualifications",     :with => ""
     # fill_in "Preferred skills",   :with => ""
     # click_on "Create"
-    # save_and_open_page
     # page.should have_content("Some errors were found")   
   # end  
   
