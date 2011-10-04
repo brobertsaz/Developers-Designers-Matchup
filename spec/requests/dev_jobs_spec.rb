@@ -18,6 +18,7 @@ describe "Dev Jobs fields" do
     fill_in "Qualifications",     :with => "Everything"
     fill_in "Preferred skills",   :with => "Everything"
     click_on "Create"
+    save_and_open_page
     page.should have_content("job was successfully created") 
   end 
     
