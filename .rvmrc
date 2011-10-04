@@ -1,1 +1,4 @@
 rvm use 1.9.2@devdes --create
+
+--colour
+--format documentation
