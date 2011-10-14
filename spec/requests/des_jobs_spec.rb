@@ -1,15 +1,16 @@
 require 'spec_helper'
 
 describe "Des Jobs fields" do
-  # it "should not make a new des job", :js => true do
-    # visit new_des_job_path
-    # fill_in "Title",              :with => ""
-    # fill_in "Description",        :with => ""
-    # fill_in "Requirements",       :with => ""
-    # fill_in "Responsibilities",   :with => ""
-    # click_on "Create"
-    # page.should have_content("Please fill out this field")   
-  # end  
+  it "should not make a new des job" do
+    visit new_des_job_path
+    fill_in "Title",              :with => ""
+    fill_in "Description",        :with => ""
+    fill_in "Requirements",       :with => ""
+    fill_in "Responsibilities",   :with => ""
+    click_on "Create"
+    save_and_open_page
+    page.should have_content("Some errors were found")   
+  end  
   
   it "should make a new des job", :js => true do
     visit new_des_job_path
@@ -20,6 +21,7 @@ describe "Des Jobs fields" do
     click_on "Create"
     save_and_open_page
     page.should have_content("job was successfully created") 
+    page.should have_content("New Job") 
   end 
     
 end

@@ -1,2 +1,24 @@
 <h1>Developers Available</h1>
 
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Actions</th>
+  </tr>
+
+<% @developers.each do |developer| %>
+  <tr>
+  	<td><%= link_to developer.name,  :action => 'show', :id => developer %></td>
+    <td><%= developer.description %></td>
+    <td><%= link_to 'Show', developer %>
+    <%= link_to 'Edit', edit_developer_path(developer) %>
+    <%= link_to 'Destroy', developer, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Developer', new_developer_path %>
+
